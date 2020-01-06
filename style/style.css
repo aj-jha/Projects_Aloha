@@ -1,4 +1,510 @@
-h1 {
-  color: purple;
-  background-color: seashell;
+/* Fonts */
+
+.raleway-light-normal-black {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-style: normal;
+  color: black;
+  font-size: 1.4rem;
+}
+
+.raleway-normal-500-white {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 2px gray;
+}
+
+.raleway-light-medium-white {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px gray;
+}
+
+.raleway-light-medium-red {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-style: normal;
+  color: #d8483e;
+  font-size: 20px;
+}
+
+.playfair-ita-normal-black {
+  font-family: "Playfair Display";
+  font-weight: normal;
+  font-style: italic;
+  color: black;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 2px gray;
+}
+
+.playfair-ita-normal-white {
+  font-family: "Playfair Display";
+  font-weight: normal;
+  font-style: italic;
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 2px gray;
+}
+
+.playfair-bold-normal-black {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-style: normal;
+  color: black;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 2px gray;
+}
+
+.playfair-bold-normal-white {
+  font-family: "Playfair Display";
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  font-size: 4rem;
+  text-shadow: 1px 1px 2px gray;
+}
+
+.playfair-bold-normal-white-2 {
+  font-family: "Playfair Display";
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 2px gray;
+}
+
+.raleway-light-normal-white {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  font-size: 2rem;
+  text-shadow: lightgrey;
+  text-shadow: 1px 1px 2px gray;
+}
+
+.raleway-light-normal-white-2 {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: lightgrey;
+  text-shadow: 1px 1px 2px gray;
+  align-self: center;
+}
+
+.raleway-light-normal-footer {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  font-size: 1rem;
+}
+
+/* End of Fonts */
+
+/* Beginning of Header Styling */
+
+header {
+  display: flex;
+  height: 75px;
+  width: auto;
+  justify-content: space-between;
+  padding-top: 12px;
+  background-color: white;
+  padding-bottom: 12px;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+}
+#logo {
+  height: 80px;
+  align-self: flex-start;
+  padding-left: 30px;
+}
+/* Made more sense to use it as an ID isntead of class */
+#nav {
+  align-self: center;
+  padding-left: 0px;
+  margin-left: -50px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+}
+#nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+ul li {
+  margin-left: 12px;
+  margin-right: 12px;
+  text-transform: uppercase;
+  align-self: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+li a {
+  text-decoration: none;
+  color: #d8483e;
+  text-align: center;
+}
+#cart-logo {
+  position: relative;
+  height: 75px;
+  align-self: flex-end;
+  padding-right: 50px;
+}
+#cart-logo img {
+  height: 90%;
+}
+
+/* Header Styiling Above  */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(/assets/images/banner-girl.png), url(/assets/images/flower-bkgd.jpg);
+  background-size: cover, 15rem, 100rem;
+  background-position: center bottom, center bottom;
+  background-attachment: scroll, scroll;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  height: 700px;
+}
+
+.row-1 {
+  display: flex;
+  height: 50px;
+}
+
+.row-2 {
+  display: flex;
+}
+
+/* About Box - 2nd section of the body */
+.about-box {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: white;
+}
+
+.different-fonts {
+  display: flex;
+  height: 100px;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-about {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* End of About Box */
+
+/* Category Grid - 3rd section of body */
+.container {
+  height: 900px;
+  display: grid;
+  grid-template-areas:
+    "a a"
+    "b c"
+    "d e"
+    "f f";
+  grid-gap: 5px;
+}
+
+@media screen and (min-width: 601px) {
+  .container {
+    grid-template-areas:
+      "a a b c"
+      "d e f f";
+    /* height: 600px; */
+    height: 45vw;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .container {
+    grid-template-areas:
+      "a a b c"
+      "d e f f";
+    height: 45vw;
+  }
+}
+.category-mens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 295px; */
+  /* flex-basis: 50%; */
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(/assets/images/mens-category.jpg);
+  grid-area: a;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.category-trends {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 295px;
+  flex-basis: 25%; */
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(/assets/images/trends-category.jpg);
+  grid-area: b;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.category-glasses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 295px;
+  flex-basis: 25%; */
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(/assets/images/glasses-category.jpg);
+  grid-area: c;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.category-sale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 295px;
+    flex-basis: 25%; */
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(/assets/images/sale-category.jpg);
+  grid-area: d;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.category-bags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 295px;
+    flex-basis: 25%; */
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(/assets/images/bags-category.jpg);
+  grid-area: e;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.category-womens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 295px;
+    flex-basis: 25%; */
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(/assets/images/womens-category.jpg);
+  grid-area: f;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* End of Category Grid */
+
+@media screen and (min-width: 1092px) {
+  .carousel-cell {
+    width: 50%;
+  }
+}
+
+.carousle-box {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: white;
+}
+
+.main-carousel {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+#carouselDiv {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.carousel-cell {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-group {
+  font-family: "Raleway";
+  font-weight: 300;
+  color: grey;
+  text-transform: uppercase;
+  font-size: 1 rem;
+  margin-bottom: 10px;
+}
+
+.product-name {
+  font-family: "Playfair Display";
+  font-weight: 300;
+  color: #d8483e;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-style: bold;
+  color: grey;
+  text-transform: uppercase;
+  font-size: 1 rem;
+  margin-bottom: 10px;
+}
+
+.row-different-fonts {
+  display: flex;
+  flex-direction: row;
+}
+
+.cartButton {
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+}
+
+#subscription-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 40px;
+  width: 100vw;
+  height: 300px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    url(/assets/images/wave-bkgd.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+#contentsForm {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: fit-content;
+}
+#submitForm {
+  display: flex;
+}
+
+#submit {
+  color: white;
+  padding: 10px 15px;
+  margin-left: -125px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-radius: 20px;
+  background-color: #d8483e;
+  font-size: 20px;
+}
+#email {
+  padding-left: 20px;
+  align-self: center;
+  border-radius: 20px;
+  width: 25vw;
+  height: 100%;
+  border: none;
+  font-size: 20px;
+}
+::placeholder {
+  color: grey;
+  font-weight: 100;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #242424;
+  height: 30%;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+}
+
+#social-flex {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
 }

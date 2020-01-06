@@ -1,0 +1,22 @@
+{
+  "name": "projects_aloha",
+  "version": "1.0.0",
+  "description": "#Technologies used:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aj-jha/Projects_Aloha.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aj-jha/Projects_Aloha/issues"
+  },
+  "homepage": "https://github.com/aj-jha/Projects_Aloha#readme",
+  "dependencies": {
+    "flickity": "^2.2.1"
+  }
+}
